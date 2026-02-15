@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gigi Fournais – Steno Museum</title>
+  <!-- FAVICON -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <meta name="theme-color" content="#1c2c4f">
+
+  <!-- FÆLLES CSS -->
+  <link rel="stylesheet" href="basefil.css">
+
+  <!-- SIDE CSS (kun Lille Nor projekt) -->
+  <link rel="stylesheet" href="projekter.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAV / MENU I PILLE-FORM -->
+  <header class="hero-header scroll-up" id="site-header">
+    <div class="hero-header-inner">
+      <!-- LOGO: tilbage til index -->
+      <a href="index.html" class="logo-link" aria-label="Til forsiden">
+        <img src="billeder/logoportfolio.png" alt="Gigi Fournais logo" class="logo-img" />
+      </a>
+
+      <nav class="hero-nav" aria-label="Hovedmenu">
+        <!-- OM MIG: til ommig.html -->
+        <a href="ommig.html">Om mig</a>
+
+        <!-- KONTAKT: mailto -->
+        <a href="mailto:gigifournais@gmail.com">Kontakt mig</a>
+
+        <!-- Dropdown: Projekter -->
+        <div class="nav-dropdown" id="projectsDropdown">
+          <button
+            type="button"
+            class="nav-dropbtn"
+            id="projectsBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="projectsMenu"
+          >
+            Projekter
+            <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+
+          <div class="nav-dropmenu" id="projectsMenu" role="menu" aria-labelledby="projectsBtn">
+            <a role="menuitem" href="havblink.html">Havblink Hvidvin</a>
+            <a role="menuitem" href="lillenorprojekt.html" aria-current="page">Lille Nor</a>
+            <a role="menuitem" href="steno.html">Steno Museum</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <header class="project-hero">
+      <div class="wrap">
+        <p class="menu-kicker">MENU 2 · STENO MUSEUM</p>
+
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1 class="hero-title">
+            INTERAKTIV<br>
+            OPLEVELSE<br>
+           
+            </h1>
+
+            <div class="hero-body">
+              <p class="hero-lead">
+                Et UX- og formidlingsprojekt udviklet for Steno Museet, hvor målet var at gøre Tobias Wangs 
+                udstilling mere intuitiv og engagerende for yngre besøgende gennem interaktiv storytelling, 
+                visuelle forklaringer og et digitalt formidlingslag, der skabte sammenhæng og nysgerrighed.
+              </p>
+            </div>
+          </div>
+
+          <figure class="hero-media">
+            <img src="billeder/stenoprojekt.png" alt="Mockup af steno museum website på en skærm">
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <!-- STEMNING -->
+    <section class="project-section mood" aria-labelledby="mood-title">
+      <div class="wrap wrap--wide">
+        <h2 id="mood-title" class="mood-title">
+          STEMNING &amp; VISUEL<br>RETNING
+        </h2>
+
+        <div class="mood-grid">
+          <div class="mood-text">
+            <p>
+             Jeg arbejdede med at oversætte Tobias Wangs poetiske og personlige univers til et digitalt formidlingslag. Gennem moodboards, visuelt researchmateriale
+            og analyse af udstillingens rekvisitter udviklede jeg en visuel retning med fokus på varme materialer, collageelementer, organiske former og små lag af historieformidling.<br>
+               
+             Denne visuelle retning dannede grundlaget for farver, typografi, komposition og de interaktive elementer, som understøttede stemningen i udstillingen.
+            </p>
+          </div>
+
+          <figure class="mood-media">
+            <img src="billeder/stenomoodboard.png" alt="Havblink moodboard/collage">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- BESKRIVELSE -->
+    <section class="project-section desc" aria-labelledby="desc-title">
+      <div class="wrap wrap--wide">
+        <div class="desc-grid">
+          <div class="desc-col">
+            <h2 id="desc-title" class="desc-title">BESKRIVELSE</h2>
+
+            <p>
+                Dette projekt blev udviklet i samarbejde med Steno Museet som en udvidelse af kunstneren Tobias Wangs udstilling “Videnskab er Lidenskab”. Udstillingens centrale element var Wangs personlige bogreol, 
+                men fortællingen bag objekterne var svær at afkode – især for målgruppen 18–30 år, der efterspurgte mere visuel forklaring og interaktivitet.
+            </p>
+
+            <p>
+                Opgaven var at skabe en digital og interaktiv løsning, der kunne binde fortællingen sammen, skabe nysgerrighed og gøre udstillingen mere intuitiv –
+                 uden at gå på kompromis med det personlige og akademiske udtryk. Målet var at give de besøgende en lettere og mere engagerende vej ind i Wangs univers.
+            </p>
+          </div>
+
+          <div class="desc-col">
+            <h2 class="desc-title">MIT BIDRAG</h2>
+            <p>I projektet havde jeg ansvar for den visuelle og interaktive del af oplevelsen. Mine hovedopgaver omfattede:</p>
+            <ul class="contrib-list">
+              <li>Udarbejdelse af segmentering, personas og brugerrejse</li>
+              <li>Visuel analyse af målgruppen 18–30 år og deres behov for forklaring/overblik</li>
+              <li>Moodboards, farver, typografi og collageunivers</li>
+              <li>Idéudvikling af interaktive koncepter og storytelling-lag</li>
+              <li>Design af UI-elementer, layout og skærmstruktur</li>
+              <li>Motion graphics og visuelle overgange mellem fortællinger</li>
+              <li>Programmering af prototype i HTML & CSS</li>
+              <li>Bidrag til prototype, flow og opbygning af high-fidelity løsning</li>
+              <li>Facilitetering af think-aloud-tests og efterfølgende iterationer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCES -->
+    <section class="project-section process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="process-grid">
+          <div class="process-left">
+            <h2 id="process-title" class="process-title">PROCES</h2>
+
+            <article class="process-card">
+              <h3>1 · FORSTÅELSE</h3>
+              <p>
+                Observationer i udstillingen, interviews med målgruppen og analyse af det eksisterende formidlingskoncept 
+                for at afdække, hvordan unge besøgende oplevede indholdet – og hvor engagementet faldt.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <h3>2 · STRUKTUR &amp; KONCEPT</h3>
+              <p>
+                Jeg var med til at definere persona, brugerrejse og problemformulering samt udvikle et interaktivt koncept, 
+                der gjorde formidlingen mere sanselig, nærværende og målrettet en yngre målgruppe.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <h3>3 · PROTOTYPE &amp; TEST</h3>
+              <p>
+                Vi udviklede en interaktiv prototype og testede den med brugere fra målgruppen. På baggrund af feedback
+                 justerede vi interaktioner, informationsmængde og visuel guidning for at skabe mere engagement og bedre forståelse.
+              </p>
+            </article>
+          </div>
+
+          <div class="process-right">
+            <button class="collage-btn" type="button" aria-label="Åbn collage i stor visning">
+              <img
+                class="collage-thumb"
+                src="billeder/stenoProces.png"
+                data-full="billeder/stenoProces.png"
+                alt="Proces-collage for steno museum"
+              />
+            </button>
+            <p class="collage-hint">Klik på collagen for at zoome</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIGHTBOX -->
+      <div class="lightbox" id="collageLightbox" aria-hidden="true">
+        <img class="lightbox-img" alt="" />
+      </div>
+    </section>
+
+    <!-- RESULTAT -->
+    <section class="project-section result" id="result" aria-labelledby="result-title">
+      <div class="wrap">
+        <h2 id="result-title" class="result-title">RESULTATET</h2>
+
+        <div class="result-grid">
+          <div class="result-text">
+            <p>
+                Resultatet blev en interaktiv storytelling-oplevelse, der fungerede som et digitalt supplement til Tobias Wangs udstilling. Brugeren kunne udforske bogreolen gennem billeder,
+                lyd, korte fortællinger og animationer, som skabte en tydelig rød tråd og gjorde det lettere for målgruppen at forstå udstillingens temaer.
+            </p>
+
+            <p>
+                Løsningen skabte en mere engagerende oplevelse og gjorde naturvidenskab mere tilgængelig og inspirerende for yngre besøgende
+                 – samtidig med at udstillingens personlige og æstetiske udtryk blev bevaret.
+            </p>
+            <p>BEMÆRK: Løsningen er lavet til skærmstørrelsen 1920x1080, brug udviklerværktøjet for at få den fulde oplevelse!</p>
+          </div>
+
+          <div class="result-media">
+            <video
+              class="result-video"
+              src="billeder/resultatssteno.mp4"
+              muted
+              playsinline
+              preload="metadata"
+              controls
+            ></video>
+
+            <a class="result-cta" href="http://exhibitengineers.gamersmanual.dk" target="_blank" rel="noopener">
+              Se fulde løsning her!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT (hvis den er ens på alle sider: flyt til base og behold kun HTML her) -->
+    <section class="kontakt-section" id="kontakt">
+      <div class="kontakt-card">
+        <h2 class="kontakt-title">Klar til at booke bord?</h2>
+        <p class="kontakt-subtitle">
+          Lad os tage en snak om dit næste projekt – jeg tager gerne kokkejakken på.
+        </p>
+    
+        <p class="kontakt-text">
+          Jeg hjælper gerne med alt fra visuelle identiteter og websites til content på sociale medier.
+          Skriv eller connect med mig – så finder vi den rette menu til dit projekt.
+        </p>
+    
+        <div class="kontakt-info">
+            <p>
+              <a href="mailto:gigifournais@gmail.com">gigifournais@gmail.com</a>
+            </p>
+          
+            <p>
+              <a
+              href="https://www.linkedin.com/in/gigi-fournais-c-605460238/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Connect på LinkedIn
+              </a>
+            </p>
+          </div>
+          
+          <a href="mailto:gigifournais@gmail.com" class="cta-btn kontakt-btn">Book en snak</a>
+        </div>
+      </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

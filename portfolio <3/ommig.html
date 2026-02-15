@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gigi Fournais – Om mig</title>
+  <!-- FAVICON -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <meta name="theme-color" content="#1c2c4f">
+
+  <!-- Base først -->
+  <link rel="stylesheet" href="basefil.css" />
+  <!-- Side CSS bagefter -->
+  <link rel="stylesheet" href="ommig.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="page-ommig">
+  <div id="top"></div>
+
+  <!-- NAV / MENU I PILLE-FORM -->
+  <header class="hero-header scroll-up" id="site-header">
+    <div class="hero-header-inner">
+      <!-- Logo tilbage til index -->
+      <a href="index.html" class="logo-link" aria-label="Til forsiden">
+        <img src="billeder/logoportfolio.png" alt="Gigi Fournais logo" class="logo-img" />
+      </a>
+
+      <nav class="hero-nav" aria-label="Hovedmenu">
+        <a href="ommig.html" aria-current="page">Om mig</a>
+        <a href="mailto:gigifournais@gmail.com">Kontakt mig</a>
+
+        <!-- Dropdown: Projekter -->
+        <div class="nav-dropdown" id="projectsDropdown">
+          <button
+            type="button"
+            class="nav-dropbtn"
+            id="projectsBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="projectsMenu"
+          >
+            Projekter
+            <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+
+          <div class="nav-dropmenu" id="projectsMenu" role="menu" aria-labelledby="projectsBtn">
+            <a role="menuitem" href="lillenorprojekt.html">Lille Nor</a>
+            <a role="menuitem" href="steno.html">Steno Museum</a>
+            <a role="menuitem" href="havblink.html">Havblink Hvidvin</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="om-hero" id="om-hero">
+      <div class="om-hero-inner">
+        <div class="om-hero-left">
+          <h1 class="om-hero-title">
+            <span class="line">MØD KOKKEN</span>
+            <span class="line">BAG MENUEN</span>
+          </h1>
+          <p class="om-hero-subtitle">
+            En personlig fortælling om passion,<br />
+            håndværk og kreativitet.
+          </p>
+        </div>
+    
+        <div class="om-hero-right">
+          <div class="om-hero-photo">
+            <img
+              src="billeder/kokken.png"
+              data-static="billeder/kokken.png"
+              data-animated="billeder/kokken.gif"
+              alt="Gigi – portræt"
+              id="kokkenGif"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="menu-section">
+      <div class="menu-inner">
+    
+        <!-- INTRO TEKST -->
+        <div class="menu-intro">
+          <p class="menu-intro-lead">
+            Jeg er Gigi — designkok, idéudvikler<br>
+            og visuel historiefortæller.
+          </p>
+    
+          <p class="menu-intro-text">
+            Her kombinerer jeg kreativitet, æstetik og fortællinger,
+            der skaber smag og mening.
+          </p>
+        </div>
+    
+        <!-- TITEL -->
+        <h2 class="menu-title">DAGENS MENU</h2>
+    
+        <!-- GRID -->
+        <div class="menu-grid">
+    
+          <!-- FORRET -->
+          <div class="menu-card">
+            <h3 class="menu-kicker">FORRET</h3>
+            <p class="menu-lead">
+              Fundamentet – nysgerrighed, mennesker og æstetik
+            </p>
+            <p>
+              Jeg er drevet af en naturlig nysgerrighed og lysten til at forstå mennesker.
+              Det er også derfor min baggrund i detail, beauty og kundeservice følger mig i alt,
+              jeg laver: god energi, blik for detaljer og en stor kærlighed til at skabe smukke,
+              intuitive oplevelser.
+            </p>
+          </div>
+    
+          <!-- HOVEDRET -->
+          <div class="menu-card">
+            <h3 class="menu-kicker">HOVEDRET</h3>
+            <p class="menu-lead">
+              Mit håndværk – struktur, designlogik og kreativitet i balance
+            </p>
+            <p>
+              Jeg arbejder med design på en måde, hvor æstetik, funktion og målgruppe hænger sammen.
+              Jeg er organiseret, idérig og samarbejdsstærk og elsker processer,
+              hvor vi går fra kaos til en klar retning.
+            </p>
+          </div>
+    
+          <!-- DESSERT -->
+          <div class="menu-card">
+            <h3 class="menu-kicker">DESSERT</h3>
+            <p class="menu-lead">
+              Mit ekstra drys – varme, humor og menneskelighed
+            </p>
+            <p>
+              Jeg er typen der skaber ro, overblik og god stemning.
+              Jeg elsker gode historier, små visuelle detaljer og hverdagsluksus.
+              Det er alt det, der gør min personlighed – og mit arbejde – nærværende.
+            </p>
+          </div>
+    
+        </div>
+    
+      </div>
+    </section>
+    
+
+    <section class="offkitchen" id="offkitchen">
+      <div class="offkitchen-sticky">
+        <h2 class="offkitchen-title">NÅR KOKKEN IKKE ER I KØKKENET</h2>
+
+        <div class="offkitchen-grid">
+          <div class="offkitchen-text">
+            <p>
+              Jeg hedder Gigi, jeg er 23 år og bor i Aarhus C med min kæreste.
+              Selvom jeg elsker byen, er jeg et kæmpe familiemenneske – så meget,
+              at jeg hver sommer pakker tasken og flytter hjem til mine svigerforældre i Aabenraa,
+              hvor jeg hjælper med at drive deres café.
+            </p>
+
+            <p>
+              Jeg er også typen, der frivilligt står på et Bike Power-hold kl. 05.45…
+              før solen (og alle andre) er stået op.
+            </p>
+
+            <p>
+              Og når jeg ikke kokkererer i skolen, fortsætter jeg gerne i køkkenet derhjemme.
+              Jeg elsker god mad – både at lave den, smage den og dele den.
+            </p>
+          </div>
+
+          <div class="offkitchen-cameraWrap" id="cameraWrap">
+            <div class="polaroid-stack" aria-hidden="true">
+              <img class="polaroid p1" src="billeder/bike.png" alt="" />
+              <img class="polaroid p2" src="billeder/madbillede.png" alt="" />
+              <img class="polaroid p3" src="billeder/jones.png" alt="" />
+              <img class="polaroid p4" src="billeder/familie.png" alt="" />
+            </div>
+
+            <img class="camera" src="billeder/kamera.png" alt="Kamera" />
+            <div class="camera-hint">Scroll for at fremkalde øjeblikke</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reviews-section" id="reviews">
+
+      <h2 class="reviews-title">ANMELDELSER FRA GÆSTERNE</h2>
+    
+      <div class="reviews-carousel" aria-roledescription="carousel">
+    
+        <!-- Prev -->
+        <button 
+          class="reviews-nav reviews-prev" 
+          type="button" 
+          aria-label="Forrige anmeldelser">
+          ‹
+        </button>
+    
+        <div class="reviews-viewport">
+          <div class="reviews-track">
+    
+            <!-- ===== SLIDE 1 ===== -->
+            <div class="reviews-slide" role="group" aria-label="Side 1 af 2">
+    
+              <!-- Review 1 -->
+              <article class="review-card">
+                <div class="review-hearts" aria-label="5 ud af 5">
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                </div>
+    
+                <p class="review-quote">
+                  “Gigi er en af de mest ansvarsfulde og engagerede medarbejdere, vi har haft.”
+                </p>
+    
+                <p class="review-meta">
+                  Pia Mikkelsen — Store Manager, Name It
+                </p>
+    
+                <p class="review-body">
+                  Hun har desuden været en stor hjælp med content til sociale medier — 
+                  hun forstår både vores brand og vores målgruppe, og hun skaber materiale, der performer.
+                </p>
+              </article>
+    
+              <!-- Review 2 -->
+              <article class="review-card">
+                <div class="review-hearts" aria-label="5 ud af 5">
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                </div>
+    
+                <p class="review-quote">
+                  “Hun skaber tryghed — både hos børn og forældre.”
+                </p>
+    
+                <p class="review-meta">
+                  Maianne — Leder, Børnehøjskolen i Kolding
+                </p>
+    
+                <p class="review-body">
+                  Som frivillig har Gigi formået at være både imødekommende, rolig og empatisk.
+                  Hun ser børnene, taler i øjenhøjde og er en naturlig rollemodel.
+                  Hun tager ansvar, træder til hvor det er nødvendigt, og hun har en evne
+                  til at skabe ro i aktiviteter, som ellers kan være kaotiske.
+                  Vi ville til enhver tid byde hende velkommen igen.
+                </p>
+              </article>
+    
+              <!-- Review 3 -->
+              <article class="review-card">
+                <div class="review-hearts" aria-label="5 ud af 5">
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                </div>
+    
+                <p class="review-quote">
+                  “Gigi har en helt særlig kombination af kreativitet, æstetik og salg.”
+                </p>
+    
+                <p class="review-meta">
+                  Teresa — Konsulentchef, Grænn
+                </p>
+    
+                <p class="review-body">
+                  Hun rådgiver kunder sikkert og ærligt, præsenterer produkter med stor viden
+                  og skaber en tillidsfuld oplevelse hver gang.
+                  Hendes visuelle sans er en kæmpe styrke.
+                </p>
+              </article>
+    
+            </div>
+    
+            <!-- ===== SLIDE 2 ===== -->
+            <div class="reviews-slide" role="group" aria-label="Side 2 af 2">
+    
+              <!-- Review 4 -->
+              <article class="review-card">
+                <div class="review-hearts" aria-label="5 ud af 5">
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                </div>
+    
+                <p class="review-quote">
+                  “Gigi løfter energien i et rum – både hos kunder og kolleger.”
+                </p>
+    
+                <p class="review-meta">
+                  Sofie — Team Manager, Evolution, Malta
+                </p>
+    
+                <p class="review-body">
+                  Hun var en af vores mest engagerede og stabile gamepræsentører.
+                  Gigi skaber tillid, holder hovedet koldt i travle situationer
+                  og formidler professionelt med varme og overskud.
+                  Hendes positive udstråling gjorde hende hurtigt til en favorit
+                  hos både team og spillere.
+                </p>
+              </article>
+    
+              <!-- Review 5 -->
+              <article class="review-card">
+                <div class="review-hearts" aria-label="5 ud af 5">
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                </div>
+    
+                <p class="review-quote">
+                  “Gigi har en stærk kombination af struktur, kreativitet og menneskelighed.”
+                </p>
+    
+                <p class="review-meta">
+                  Camilla Hansen — Store Manager, Name It Kolding
+                </p>
+    
+                <p class="review-body">
+                  Hun tager ansvar, arbejder selvstændigt og ser altid løsninger.
+                  Gigi forstår både kunder, børn og forældre – og skaber tryghed med sit nærvær.
+                  Hun var en vigtig drivkraft på gulvet og i vores visuelle udtryk.
+                </p>
+              </article>
+    
+              <!-- Review 6 (OBS: Dublet – behold kun hvis med vilje) -->
+              <article class="review-card">
+                <div class="review-hearts" aria-label="5 ud af 5">
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                  <span class="heart">♥</span>
+                </div>
+    
+                <p class="review-quote">
+                  “Som frivillig ved Børnehøjskolen har Gigi været en uvurderlig støtte.”
+                </p>
+    
+                <p class="review-meta">
+                  Leder, Børnehøjskolen i Kolding
+                </p>
+    
+                <p class="review-body">
+                  Hun møder børnene i øjenhøjde, skaber tryghed og tager naturligt ansvar i aktiviteterne.
+                  Gigi er rolig, engageret og empatisk – og hun bidrager med både struktur og nærvær.
+                </p>
+              </article>
+    
+            </div>
+    
+          </div>
+        </div>
+    
+        <!-- Next -->
+        <button 
+          class="reviews-nav reviews-next" 
+          type="button" 
+          aria-label="Næste anmeldelser">
+          ›
+        </button>
+    
+      </div>
+    
+      <!-- Dots -->
+      <div class="reviews-dots" role="tablist" aria-label="Vælg side">
+        <button 
+          class="dot is-active" 
+          type="button" 
+          aria-label="Gå til side 1" 
+          aria-current="true">
+        </button>
+    
+        <button 
+          class="dot" 
+          type="button" 
+          aria-label="Gå til side 2">
+        </button>
+      </div>
+    
+    </section>
+    
+    <!-- KONTAKT -->
+    <section class="kontakt-section" id="kontakt">
+      <div class="kontakt-card">
+        <h2 class="kontakt-title">Klar til at booke bord?</h2>
+        <p class="kontakt-subtitle">
+          Lad os tage en snak om dit næste projekt – jeg tager gerne kokkejakken på.
+        </p>
+
+        <p class="kontakt-text">
+          Jeg hjælper gerne med alt fra visuelle identiteter og websites til content på sociale medier.
+          Skriv eller connect med mig – så finder vi den rette menu til dit projekt.
+        </p>
+        <div class="kontakt-info">
+          <p>
+            <a href="mailto:gigifournais@gmail.com">gigifournais@gmail.com</a>
+          </p>
+        
+          <p>
+            <a
+            href="https://www.linkedin.com/in/gigi-fournais-c-605460238/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect på LinkedIn
+            </a>
+          </p>
+        </div>
+        
+        <a href="mailto:gigifournais@gmail.com" class="cta-btn kontakt-btn">Book en snak</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

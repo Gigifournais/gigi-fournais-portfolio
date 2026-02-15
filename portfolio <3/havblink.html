@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gigi Fournais – Havblink Hvidvin</title>
+  <!-- FAVICON -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <meta name="theme-color" content="#1c2c4f">
+
+  <!-- FÆLLES CSS -->
+  <link rel="stylesheet" href="basefil.css">
+
+  <!-- SIDE CSS (kun Lille Nor projekt) -->
+  <link rel="stylesheet" href="projekter.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAV / MENU I PILLE-FORM -->
+  <header class="hero-header scroll-up" id="site-header">
+    <div class="hero-header-inner">
+      <!-- LOGO: tilbage til index -->
+      <a href="index.html" class="logo-link" aria-label="Til forsiden">
+        <img src="billeder/logoportfolio.png" alt="Gigi Fournais logo" class="logo-img" />
+      </a>
+
+      <nav class="hero-nav" aria-label="Hovedmenu">
+        <!-- OM MIG: til ommig.html -->
+        <a href="ommig.html">Om mig</a>
+
+        <!-- KONTAKT: mailto -->
+        <a href="mailto:gigifournais@gmail.com">Kontakt mig</a>
+
+        <!-- Dropdown: Projekter -->
+        <div class="nav-dropdown" id="projectsDropdown">
+          <button
+            type="button"
+            class="nav-dropbtn"
+            id="projectsBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="projectsMenu"
+          >
+            Projekter
+            <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+
+          <div class="nav-dropmenu" id="projectsMenu" role="menu" aria-labelledby="projectsBtn">
+            <a role="menuitem" href="havblink.html">Havblink Hvidvin</a>
+            <a role="menuitem" href="lillenorprojekt.html" aria-current="page">Lille Nor</a>
+            <a role="menuitem" href="steno.html">Steno Museum</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <header class="project-hero">
+      <div class="wrap">
+        <p class="menu-kicker">MENU 3 · HAVBLINK HVIDVIN</p>
+
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1 class="hero-title">
+            OPLEVELSES<br>
+            DESIGN<br>
+           
+            </h1>
+
+            <div class="hero-body">
+              <p class="hero-lead">
+                Et UX- og webdesignprojekt for Havblink Hvidvin, hvor formålet var at skabe et moderne og naturinspireret website, der gjorde dansk hvidvin mere synlig, 
+                troværdig og let at forstå for en købestærk målgruppe på 25–40 år.
+              </p>
+            </div>
+          </div>
+
+          <figure class="hero-media">
+            <img src="billeder/havblinkprojekt.png" alt="Mockup af HAVBLINK HVIDVIN website på en skærm">
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <!-- STEMNING -->
+    <section class="project-section mood" aria-labelledby="mood-title">
+      <div class="wrap wrap--wide">
+        <h2 id="mood-title" class="mood-title">
+          STEMNING &amp; VISUEL<br>RETNING
+        </h2>
+
+        <div class="mood-grid">
+          <div class="mood-text">
+            <p>
+                Den visuelle retning tog udgangspunkt i den sydfynske natur, som er central for Havblinks identitet. Jeg arbejdede med lette grønne nuancer, nordiske blå toner og en rolig typografi 
+                for at skabe et atmosfærisk univers, der både var eksklusivt og naturligt.
+                Moodboards, style tiles, farvepaletter og typografivalg dannede fundamentet for udtrykket. Det visuelle univers skulle afspejle Havblinks værdier: ro, kvalitet, autenticitet og en særlig dansk vinsensibilitet.
+            </p>
+          </div>
+
+          <figure class="mood-media">
+            <img src="billeder/havblinkmoodboard.png" alt="Havblink moodboard/collage">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- BESKRIVELSE -->
+    <section class="project-section desc" aria-labelledby="desc-title">
+      <div class="wrap wrap--wide">
+        <div class="desc-grid">
+          <div class="desc-col">
+            <h2 id="desc-title" class="desc-title">BESKRIVELSE</h2>
+
+            <p>
+                Dette projekt blev udviklet som et oplevelses- og informationswebsite for den fiktive vingård Havblink Hvidvin, som ønskede at gøre dansk produceret hvidvin mere kendt og attraktiv for en købestærk målgruppe på 25–40 år.
+                Udfordringen var, at dansk hvidvin stadig er relativt ukendt, og Havblink havde derfor behov for en digital løsning, der både kunne skabe troværdighed, opmærksomhed og nysgerrighed omkring deres produkter.
+            </p>
+
+            <p>
+                Formålet var at designe et website, der præsenterede Havblinks hvidvine som et moderne og kvalitetsbevidst alternativ – samtidig med at fortællingen om natur, håndværk og lokal forankring blev tydeligt formidlet.
+            </p>
+          </div>
+
+          <div class="desc-col">
+            <h2 class="desc-title">MIT BIDRAG</h2>
+            <p>I projektet havde jeg ansvar for både det strategiske og visuelle udviklingsarbejde. Mine vigtigste opgaver omfattede:</p>
+            <ul class="contrib-list">
+              <li>Målgruppeanalyse, spørgeskemaer og interviews</li>
+              <li>Udarbejdelse af persona, segmentering og Value Proposition Canvas</li>
+              <li>Moodboards, style tiles, farvepalet og typografi</li>
+              <li>Informationsarkitektur, wireframes og skitsering af struktur</li>
+              <li>Design af high-fidelity mockups og visuel identitet</li>
+              <li>Layout, produktpræsentation og ikonografi</li>
+              <li>Programmering af prototype i HTML og CSS</li>
+              <li>Udvikling af vinoversigt, produktvisning og storytelling-sider</li>
+              <li>Løbende tests og designjusteringer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCES -->
+    <section class="project-section process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="process-grid">
+          <div class="process-left">
+            <h2 id="process-title" class="process-title">PROCES</h2>
+
+            <article class="process-card">
+              <h3>1 · FORSTÅELSE</h3>
+              <p>
+                Jeg researchede markedet for dansk hvidvin, analyserede konkurrenter og undersøgte målgruppen 25–40 år for at forstå, hvordan et nyt dansk vinbrand 
+                kunne positioneres som kvalitetsbevidst, moderne og lokalt forankret.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <h3>2 · STRUKTUR &amp; KONCEPT</h3>
+              <p>
+                Jeg udviklede brandidentitet, visuel retning og website-struktur med fokus på storytelling, stemning og produktpræsentation. Konceptet skulle skabe en 
+                sanselig oplevelse og samtidig gøre det let at navigere mellem vine, fortælling og køb.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <h3>3 · PROTOTYPE &amp; TEST</h3>
+              <p>
+                Jeg designede og kodede en responsiv prototype og arbejdede iterativt med layout, hierarki og CTA’er for at skabe balance mellem æstetik og funktion.
+                Undervejs justerede jeg struktur og visuelle elementer for at sikre klarhed og sammenhæng.
+              </p>
+            </article>
+          </div>
+
+          <div class="process-right">
+            <button class="collage-btn" type="button" aria-label="Åbn collage i stor visning">
+              <img
+                class="collage-thumb"
+                src="billeder/havblinkProces.png"
+                data-full="billeder/havblinkProces.png"
+                alt="Proces-collage for havblink hvidvin"
+              />
+            </button>
+            <p class="collage-hint">Klik på collagen for at zoome</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIGHTBOX -->
+      <div class="lightbox" id="collageLightbox" aria-hidden="true">
+        <img class="lightbox-img" alt="" />
+      </div>
+    </section>
+
+    <!-- RESULTAT -->
+    <section class="project-section result" id="result" aria-labelledby="result-title">
+      <div class="wrap">
+        <h2 id="result-title" class="result-title">RESULTATET</h2>
+
+        <div class="result-grid">
+          <div class="result-text">
+            <p>
+                Resultatet blev et informativt og visuelt helstøbt website, der præsenterer Havblinks hvidvine som et kvalitetsbevidst og moderne produkt. Løsningen kombinerer rolige farver, naturinspirerede billeder og et overskueligt layout, der gør det 
+                let for målgruppen at udforske både smagsnoter, produkterne og fortællingen om vingården.
+            </p>
+
+            <p>
+                Websitet fremstår som et troværdigt, nordisk brandunivers, der gør dansk hvidvin tilgængelig, inspirerende og visuelt indbydende for en ny generation af vininteresserede.
+            </p>
+          </div>
+
+          <div class="result-media">
+            <video
+              class="result-video"
+              src="billeder/resultathavblink.mp4"
+              muted
+              playsinline
+              preload="metadata"
+              controls
+            ></video>
+
+            <a class="result-cta" href="https://havblinkvin.gigifournais.dk" target="_blank" rel="noopener">
+              Se fulde løsning her!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT (hvis den er ens på alle sider: flyt til base og behold kun HTML her) -->
+    <section class="kontakt-section" id="kontakt">
+      <div class="kontakt-card">
+        <h2 class="kontakt-title">Klar til at booke bord?</h2>
+        <p class="kontakt-subtitle">
+          Lad os tage en snak om dit næste projekt – jeg tager gerne kokkejakken på.
+        </p>
+    
+        <p class="kontakt-text">
+          Jeg hjælper gerne med alt fra visuelle identiteter og websites til content på sociale medier.
+          Skriv eller connect med mig – så finder vi den rette menu til dit projekt.
+        </p>
+    
+        <div class="kontakt-info">
+            <p>
+              <a href="mailto:gigifournais@gmail.com">gigifournais@gmail.com</a>
+            </p>
+          
+            <p>
+              <a
+              href="https://www.linkedin.com/in/gigi-fournais-c-605460238/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Connect på LinkedIn
+              </a>
+            </p>
+          </div>
+          
+          <a href="mailto:gigifournais@gmail.com" class="cta-btn kontakt-btn">Book en snak</a>
+        </div>
+      </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

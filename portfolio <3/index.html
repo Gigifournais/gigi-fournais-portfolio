@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gigi Fournais – Visual Design Portfolio</title>
+  <!-- FAVICON -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <meta name="theme-color" content="#1c2c4f">
+
+  <!-- Base først, så index-styling bagefter -->
+  <link rel="stylesheet" href="basefil.css" />
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body class="page-index">
+  <!-- (valgfrit top-anker, men rart hvis du senere vil bruge #top) -->
+  <div id="top"></div>
+
+  <!-- NAV / MENU I PILLE-FORM -->
+  <header class="hero-header scroll-up" id="site-header">
+    <div class="hero-header-inner">
+      <!-- Logo skal tilbage til index -->
+      <a href="index.html" class="logo-link" aria-label="Til forsiden">
+        <img src="billeder/logoportfolio.png" alt="Gigi Fournais logo" class="logo-img" />
+      </a>
+
+      <nav class="hero-nav" aria-label="Hovedmenu">
+        <!-- Om mig til underside -->
+        <a href="ommig.html">Om mig</a>
+
+        <!-- Kontakt: åbner mail -->
+        <a href="mailto:gigifournais@gmail.com">Kontakt mig</a>
+
+        <!-- Dropdown: Projekter (undersider) -->
+        <div class="nav-dropdown" id="projectsDropdown">
+          <button
+            type="button"
+            class="nav-dropbtn"
+            id="projectsBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="projectsMenu"
+          >
+            Projekter
+            <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+
+          <div class="nav-dropmenu" id="projectsMenu" role="menu" aria-labelledby="projectsBtn">
+            <a role="menuitem" href="lillenorprojekt.html">Lille Nor</a>
+            <a role="menuitem" href="steno.html">Steno Museum</a>
+            <a role="menuitem" href="havblink.html">Havblink Hvidvin</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+
+        <img
+          src="billeder/forsidebillede.png"
+          alt="Gigi der smiler i blå kjole"
+          class="hero-gigi"
+        />
+
+        <div class="hero-title-block">
+          <h1 class="hero-title">
+            VISUAL DESIGN<br />
+            PORTFOLIO
+          </h1>
+        </div>
+
+        <img 
+        src="billeder/kokkehat.png"
+        alt=""
+        class="hero-kokkehat"
+        id="kokkehat"
+        aria-hidden="true"
+/>
+
+        <p class="hero-credit">
+          CREATED BY<br />
+          GIGI FOURNAIS
+        </p>
+
+      </div>
+    </section>
+    <!-- MOBIL-BESKED (kun synlig på mobil) -->
+    <div class="mobile-notice">
+      <p class="notice-eyebrow">En lille note fra kokken</p>
+      <p class="notice-text">
+        Denne menu smager allerbedst på en større skærm.
+      </p>
+    </div>
+    <!-- ET GLIMT AF MIG -->
+    <section class="glimt-section">
+      <h1 class="glimt-heading">Et glimt af mig</h1>
+      <p class="glimt-subtitle">Personlige ingredienser, der ikke kan undværes.</p>
+
+      <div class="basket-wrapper">
+        <img src="billeder/kurv.png" alt="Indkøbskurv" class="basket-image" />
+
+        <!-- Hotspots -->
+        <img src="billeder/pandekager.png" class="item item-pandekager hotspot" alt="Pandekager"
+             data-text="Stablet som mine Figma-lag (og mine morgenmadsprioriteter)" />
+        <img src="billeder/grontsag.png" class="item item-groentsager hotspot" alt="Grøntsager"
+             data-text="Clean design, clean eating. Jeg prøver i hvert fald." />
+        <img src="billeder/lipglos.png" class="item item-lipgloss hotspot" alt="Lipgloss"
+             data-text="Minimal men essentiel – som den perfekte farvepalette." />
+        <img src="billeder/eggs.png" class="item item-aeg hotspot" alt="Spejlæg"
+             data-text="Sprøde kanter. Blød kerne. Ligesom mine layouts." />
+        <img src="billeder/croissant.png" class="item item-croissant hotspot" alt="Croissant"
+             data-text="Smørbløde kurver giver bedre UI. Helt seriøst!" />
+        <img src="billeder/kilo.png" class="item item-traening hotspot" alt="Kettlebell"
+             data-text="Styrketræning… bare komponent-baseret." />
+        <img src="billeder/kortspil.png" class="item item-spil hotspot" alt="Monopoly Deal kortspil"
+             data-text="Let at lære, svær at mestre. Ligesom god UX." />
+        <img src="billeder/bog.png" class="item item-bog hotspot" alt="Camilla Läckberg bog"
+             data-text="Plot twists gør mig nysgerrig – ligesom uventede mikrointeraktioner." />
+
+        <div class="hotspot-tooltip" id="hotspot-tooltip" aria-live="polite">
+          <h3 class="tooltip-title"></h3>
+          <p class="tooltip-text"></p>
+        </div>
+
+        <!-- CTA må gerne blive som den er -->
+        <a href="ommig.html" class="cta cta--glimt">Læs mere om mig her!</a>
+      </div>
+    </section>
+
+    <!-- OM MIG (sektionen kan du beholde – eller fjerne hvis alt ligger i ommig.html) -->
+    <section class="om-mig-section" id="om-mig">
+      <div class="om-mig-inner">
+
+        <div class="om-mig-text">
+          <h2 class="om-mig-title">OM MIG</h2>
+
+          <p>
+            Jeg arbejder i krydsfeltet mellem beauty, detailhandel og digitalt design.
+            Gennem mine år hos Name It og senere som salgskonsulent for Grænn (Nilens
+            Jord, Miild og Floradania) har jeg opbygget stærke kompetencer inden for
+            rådgivning, kundeservice, visuel formidling og content creation.
+          </p>
+
+          <p>
+            Jeg trives dér, hvor æstetik møder storytelling – og hvor en god
+            kundeoplevelse skabes gennem detaljer, stemning og visuel identitet.
+          </p>
+
+          <p>
+            Samtidig studerer jeg Multimediedesign, hvor jeg arbejder med grafisk
+            design, UX, responsivt webdesign og digital kommunikation.
+          </p>
+
+          <p>
+            Jeg elsker at skabe rene, æstetiske og intuitive designløsninger – uanset
+            om det er en prototype, et website, en visuel identitet eller content.
+          </p>
+
+          <a href="ommig.html" class="cta">Læs mere om mig her!</a>
+        </div>
+
+        <img
+        src="billeder/ommigbillede.png"
+        data-static="billeder/ommig.png"
+        data-animated="billeder/ommig.gif"
+        alt="Gigi  ved en sø en sommeraften"
+        class="om-mig-image scroll-gif"
+        id="omMigGif"
+      />
+
+      </div>
+    </section>
+
+    <!-- PROJEKTER -->
+    <section class="projects-section" id="projekter">
+      <div class="projects-inner">
+
+        <div class="projects-header">
+          <h2 class="projects-title">PROJEKTER</h2>
+          <p class="projects-subtitle">Vælg dagens menu</p>
+        </div>
+
+        <div class="menu-wrapper">
+          <div class="menu-text">
+            <h3 class="menu-heading" id="menu-heading">Menu 1: Visuel identitet</h3>
+            <p class="menu-description" id="menu-description">
+              En varm og nærværende signaturret med organiske noter og et strejf af nordisk æstetik.
+            </p>
+          </div>
+
+          <div class="menu-carousel">
+            <button class="carousel-btn prev" aria-label="Forrige menu">‹</button>
+
+            <div class="carousel-track-wrapper">
+              <ul class="carousel-track">
+                <li class="carousel-slide is-active"
+                    data-heading="Menu 1: Visuel identitet"
+                    data-description="En varm og nærværende signaturret med organiske noter og et strejf af nordisk æstetik.">
+                  <a href="lillenorprojekt.html" class="plate-link">
+                    <img
+                      src="billeder/lillenormenu.png"
+                      class="plate-img"
+                      alt="Menu 1 – Visuel identitet"
+                      data-static="billeder/lillenormenu.png"
+                      data-gif="billeder/lillenormenu.gif"
+                    />
+                  </a>
+                </li>
+
+                <li class="carousel-slide"
+                    data-heading="Menu 2: Storytelling"
+                    data-description="En dyb, sanselig og mørk ret — fuld af historier, kuriositeter og fordybelse.">
+                  <a href="steno.html" class="plate-link">
+                    <img
+                      src="billeder/stenomenu.png"
+                      class="plate-img"
+                      alt="Menu 2 – Storytelling"
+                      data-static="billeder/stenomenu.png"
+                      data-gif="billeder/stenomenu.gif"
+                    />
+                  </a>
+                </li>
+
+                <li class="carousel-slide"
+                    data-heading="Menu 3: Oplevelsesdesign"
+                    data-description="En sprød, frisk og solrig servering — med noter af dansk sommer, håndværk og kold hvidvin.">
+                  <a href="havblink.html" class="plate-link">
+                    <img
+                      src="billeder/havblinkmenu.png"
+                      class="plate-img"
+                      alt="Menu 3 – Oplevelsesdesign"
+                      data-static="billeder/havblinkmenu.png"
+                      data-gif="billeder/havblinkmenu.gif"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <button class="carousel-btn next" aria-label="Næste menu">›</button>
+          </div>
+
+          <div class="carousel-dots">
+            <button class="dot is-active" data-slide="0"></button>
+            <button class="dot" data-slide="1"></button>
+            <button class="dot" data-slide="2"></button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+      <h2 class="skills-title">SKILLS</h2>
+
+      <div class="skills-columns">
+
+        <div class="skills-left">
+          <h3 class="skills-subtitle">Creative tools:</h3>
+          <div class="skills-spacer"></div>
+          <h3 class="skills-subtitle">Frontend basics</h3>
+
+          <div class="frontend-buttons">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">React</span>
+          </div>
+        </div>
+
+        <div class="skills-right">
+          <img src="billeder/bakke.png" class="bakke" alt="Serveringsbakke med tools" />
+          <div class="icon-grid">
+            <img src="billeder/figmalogo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/premiereprologo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/githublogo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/linkedinlogo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/aftereffectslogo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/lightroomlogo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/indesignlogo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/capcutlogo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/illustratorlogo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/photoshoplogo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/canvalogo.png" class="skill-icon" alt="" aria-hidden="true" />
+            <img src="billeder/instagramlogo.png" class="skill-icon" alt="" aria-hidden="true" />
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+   <!-- SOFTSKILLS -->
+<section class="softskills-section" id="softskills">
+  <div class="softskills-inner">
+    <h1 class="softskills-title">SOFTSKILLS</h1>
+
+    <div class="softskills-grid">
+      <img
+        src="billeder/MIN-PROFESSIONELLE-STYRKE.png"
+        data-static="billeder/min-professionelle-styrke.png"
+        data-animated="billeder/professionellestyrker.gif"
+        alt="Min professionelle styrke"
+        class="softskills-card softskills-gif"
+      />
+
+      <img
+        src="billeder/minpersonligestyrker.png"
+        data-static="billeder/minpersonligestyrker.png"
+        data-animated="billeder/personligestyrker.gif"
+        alt="Mine personlige styrker"
+        class="softskills-card softskills-gif"
+      />
+
+      <img
+        src="billeder/ekspertise-programmer.png"
+        data-static="billeder/EKSPERTISE&PROGRAMMER.png"
+        data-animated="billeder/ekspertiseogprogrammer.gif"
+        alt="Ekspertise og programmer"
+        class="softskills-card softskills-gif"
+      />
+    </div>
+  </div>
+</section>
+
+
+    <!-- CONTENT -->
+    <section class="content-section" id="content">
+      <h2>Husets Content</h2>
+      <p class="section-subtitle">
+        Udvalgte smagsprøver på Reels og videoindhold, jeg har skabt til Name It.
+      </p>
+
+      <div class="video-grid">
+        <div class="video-box">
+          <video class="content-video scroll-video" src="billeder/20procentvideo.mov" muted playsinline preload="auto"></video>
+          <div class="video-text">
+            <h3>Visuelle øjeblikke fra hverdagen</h3>
+            <p>
+              Jeg elsker at fange de små detaljer, der gør brands levende – hænder i
+              arbejde, kunder i flow, produkter i brug og stemninger, der ikke kan
+              sættes på ord.
+            </p>
+          </div>
+        </div>
+
+        <div class="video-box">
+          <video class="content-video scroll-video" src="billeder/butikkenvideo.mov" muted playsinline preload="auto"></video>
+          <div class="video-text">
+            <h3>Fra butiksgulvet til feedet</h3>
+            <p>
+              Mit arbejde starter i butikken og ender på sociale medier. Jeg skaber
+              indhold, der bygger bro mellem den fysiske oplevelse og det digitale
+              univers, kunderne møder online.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT -->
+    <section class="kontakt-section" id="kontakt">
+      <div class="kontakt-card">
+        <h2 class="kontakt-title">Klar til at booke bord?</h2>
+        <p class="kontakt-subtitle">
+          Lad os tage en snak om dit næste projekt – jeg tager gerne kokkejakken på.
+        </p>
+
+        <p class="kontakt-text">
+          Jeg hjælper gerne med alt fra visuelle identiteter og websites til content på sociale medier.
+          Skriv eller connect med mig – så finder vi den rette menu til dit projekt.
+        </p>
+
+        <div class="kontakt-info">
+          <p>
+            <a href="mailto:gigifournais@gmail.com">gigifournais@gmail.com</a>
+          </p>
+        
+          <p>
+            <a
+            href="https://www.linkedin.com/in/gigi-fournais-c-605460238/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect på LinkedIn
+            </a>
+          </p>
+        </div>
+        
+        <a href="mailto:gigifournais@gmail.com" class="cta-btn kontakt-btn">Book en snak</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

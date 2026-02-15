@@ -1,0 +1,862 @@
+/* =========================================================
+   INDEX-ONLY (styles.css)
+   - base.css står for: variables + reset + wrappers + nav
+========================================================= */
+
+/* ---------------------------------------------------------
+   BODY / TYPOGRAFI (index)
+--------------------------------------------------------- */
+body{
+  font-family: "Playfair Display", serif;
+  background-color: #74a5df;
+  color: #243a5a;
+}
+
+/* ---------------------------------------------------------
+   CTA (fælles knap-style på index)
+--------------------------------------------------------- */
+.cta{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 36px;
+  background-color: #f4a8c1;
+  color: #111;
+  font-family: "Anton", sans-serif;
+  font-size: 1.2rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cta:hover{
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.28);
+}
+
+.cta:active{
+  transform: translateY(0);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* CTA variation (glimt) */
+.cta--glimt{
+  margin-top: -18px; /* justér: -10 (mindre) til -30 (mere op) */
+}
+
+
+/* =========================================================
+   HERO (index)
+========================================================= */
+.hero{
+  position: relative;
+  height: 100vh;
+  padding: 120px 6vw 40px;
+  box-sizing: border-box;
+  color: #ffffff;
+  background-color: #496ca0;
+  overflow: hidden;
+}
+
+.hero::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("billeder/forsidebaggrund.jpg");
+  background-size: 140% auto;
+  background-position: center;
+  opacity: 0.9;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+.hero-inner{
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.hero-gigi{
+  position: absolute;
+  bottom: -60px;
+  left: 0.5vw;
+  height: 92vh;
+  width: auto;
+  filter: drop-shadow(0 26px 55px rgba(0, 0, 0, 0.55));
+}
+
+.hero-title-block{
+  position: absolute;
+  top: 42%;
+  left: 38%;
+  transform: translateY(-50%);
+  max-width: 700px;
+  text-align: left;
+}
+
+.hero-title{
+  font-size: clamp(4.5rem, 8vw, 8rem);
+  line-height: 0.92;
+  margin: 0;
+  text-transform: uppercase;
+  color: #e2f7fd;
+}
+
+.hero-kokkehat{
+  position: absolute;
+  top: -6%;
+  right: -2%;
+  width: 200px;
+  pointer-events: none;
+}
+
+.hero-credit{
+  position: absolute;
+  right: 6vw;
+  bottom: 36px;
+  margin: 0;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  text-align: right;
+}
+
+
+/* =========================================================
+   ET GLIMT AF MIG
+========================================================= */
+.glimt-section{
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 16px 60px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.glimt-heading{
+  font-size: clamp(3rem, 6vw, 5rem);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.glimt-subtitle{
+  font-size: 1.25rem;
+  font-style: italic;
+  margin-bottom: 40px;
+}
+
+.basket-wrapper{
+  position: relative;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.basket-image{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.item{ position: absolute; }
+.hotspot{ cursor: pointer; }
+
+.item-pandekager{ top: 10%; left: 10%; width: 35%; }
+.item-groentsager{ top: 5%; left: -10%; width: 45%; }
+.item-croissant{ top: 50%; left: 10%; width: 35%; }
+.item-aeg{ top: 30%; left: 35%; width: 36%; }
+.item-traening{ top: 35%; left: 50%; width: 30%; }
+.item-lipgloss{ top: 0%; left: 52%; width: 29%; }
+.item-spil{ top: 5%; left: 70%; width: 30%; }
+.item-bog{ top: 35%; left: 70%; width: 35%; }
+
+/* Tooltip */
+.hotspot-tooltip{
+  position: absolute;
+  min-width: 180px;
+  max-width: 260px;
+  padding: 14px 20px;
+  background-color: #ffd7e7;
+  border-radius: 24px;
+  color: #3a2237;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -120%) rotate(-6deg);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 20;
+}
+
+.hotspot-tooltip.visible{
+  opacity: 1;
+  transform: translate(-50%, -130%) rotate(-8deg);
+}
+
+
+/* =========================================================
+   OM MIG
+========================================================= */
+.om-mig-section{
+  background: #4e73aa;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  padding: 170px 7vw 110px;
+  box-sizing: border-box;
+}
+
+.om-mig-inner{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.om-mig-text{ flex: 1.1; }
+
+.om-mig-title{
+  font-size: clamp(3.5rem, 6vw, 4.6rem);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #e2f7fd;
+  margin: -10px 0 52px;
+}
+
+.om-mig-text p{
+  margin-bottom: 18px;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 600px;
+}
+
+.om-mig-text p:last-of-type{
+  margin-bottom: 60px;
+}
+
+.om-mig-image-wrap{
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.om-mig-image{
+  width: min(420px, 100%);
+  height: auto;
+  object-fit: cover;
+}
+.scroll-gif{
+  display: block;
+}
+
+
+/* =========================================================
+   PROJEKTER (CAROUSEL)
+========================================================= */
+.projects-section{
+  background-color: #f4f4f0;
+  padding: 40px 5vw 25px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.projects-inner{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.projects-header{
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.projects-title{
+  font-size: clamp(3.1rem, 5.6vw, 4.3rem);
+  letter-spacing: 0.08em;
+  color: #2d5da8;
+  margin: 0 0 6px;
+}
+
+.projects-subtitle{
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.05rem, 1.9vw, 1.35rem);
+  position: relative;
+  display: inline-block;
+  letter-spacing: 0.1em;
+  margin: 0;
+}
+
+.projects-subtitle::before,
+.projects-subtitle::after{
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 80px;
+  height: 1px;
+  background-color: #999;
+}
+
+.projects-subtitle::before{ right: 100%; margin-right: 16px; }
+.projects-subtitle::after{ left: 100%; margin-left: 16px; }
+
+.menu-wrapper{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.menu-text{
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.menu-heading{
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.9rem, 2.8vw, 2.2rem);
+  margin: 0 0 4px;
+}
+
+.menu-description{
+  font-family: "Playfair Display", serif;
+  font-size: clamp(0.95rem, 1.3vw, 1.1rem);
+  color: #555;
+  margin: 0 0 8px;
+}
+
+.menu-carousel{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.carousel-btn{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 2.3rem;
+  opacity: 0.7;
+  padding: 8px 12px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.carousel-btn.prev{ left: 0; }
+.carousel-btn.next{ right: 0; }
+
+.carousel-btn:hover{
+  opacity: 1;
+  transform: translateY(-50%) scale(1.07);
+}
+
+.carousel-track-wrapper{
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-track{
+  display: flex;
+  transition: transform 0.45s ease;
+  will-change: transform;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-slide{
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.plate-link{ text-decoration: none; }
+
+.plate-img{
+  max-height: 50vh;
+  max-width: min(820px, 72vw);
+  width: auto;
+  height: auto;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.plate-link:hover .plate-img{
+  transform: scale(1.02);
+}
+
+.carousel-dots{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.dot{
+  width: 12px;
+  height: 12px;
+  background: transparent;
+  border: 1px solid #2d5da8;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.is-active{
+  background: #2d5da8;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
+.skills{
+  position: relative;
+  background: #70A2EA;
+  min-height: 100vh;
+  padding: 150px 6vw 40px;
+  box-sizing: border-box;
+}
+
+.skills-title{
+  font-size: 7rem;
+  color: #3a5ea9;
+  max-width: 1200px;
+  margin: 0 auto 56px;
+}
+
+.skills-columns{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 60px;
+}
+
+.skills-left{ width: 40%; }
+
+.skills-subtitle{
+  font-size: 2.6rem;
+  color: #3a5ea9;
+  margin: 0 0 24px;
+}
+
+.skills-spacer{ height: 140px; }
+
+.frontend-buttons{ display: flex; gap: 22px; }
+
+.skill-tag{
+  border: 2px solid #3a5ea9;
+  color: #3a5ea9;
+  padding: 10px 28px;
+  border-radius: 12px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.skills-right{
+  position: relative;
+  width: 45%;
+  min-height: 430px;
+}
+
+.bakke{
+  position: absolute;
+  bottom: -101px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 430px;
+  z-index: 1;
+}
+
+.icon-grid{
+  position: absolute;
+  bottom: 290px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 430px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  z-index: 2;
+}
+
+.skill-icon{
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.15));
+}
+.skill-icon{
+  transition: transform 220ms ease, filter 220ms ease;
+}
+
+.skill-icon:hover{
+  transform: translateY(-6px);
+  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.25));
+}
+
+/* =========================================================
+   SOFTSKILLS
+========================================================= */
+.softskills-section{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4266a0;
+  padding: 40px 16px 20px;
+}
+
+.softskills-inner{
+  width: 100%;
+  max-width: 1300px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.softskills-title{
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  letter-spacing: 0.12em;
+  font-weight: 800;
+  color: #e2f7fd;
+  margin-bottom: 10px;
+}
+
+.softskills-grid{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.softskills-card{
+  width: 460px;
+  height: auto;
+  display: block;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+.content-section{
+  background-color: #70a2ea;
+  padding: 90px 7vw 110px;
+  box-sizing: border-box;
+}
+
+.content-section h2{
+  font-size: clamp(2.6rem, 4vw, 3.2rem);
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.content-section .section-subtitle{
+  text-align: center;
+  color: #e9f2ff;
+  font-size: 0.95rem;
+  max-width: 540px;
+  margin: 0 auto 50px;
+}
+
+.video-grid{
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.video-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-video{
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 9 / 16;
+  border-radius: 26px;
+  object-fit: cover;
+  background: #000;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.video-text{
+  max-width: 360px;
+  margin-top: 18px;
+}
+
+.video-text h3{
+  font-size: 1.3rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.video-text p{
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #f4f7ff;
+}
+
+
+/* =========================================================
+   KONTAKT (index)
+========================================================= */
+.kontakt-section{
+  background: #4e73aa;
+  padding: 90px 7vw 110px;
+  color: #fff;
+}
+
+.kontakt-card{
+  max-width: 640px;
+  margin: 0 auto;
+  background: #f5f5f0;
+  border-radius: 18px;
+  padding: 40px 38px 36px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+  text-align: center;
+}
+
+.kontakt-title{
+  font-size: clamp(2.4rem, 4vw, 3rem);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #3a5ea9;
+  margin: 0 0 12px;
+}
+
+.kontakt-subtitle{
+  font-style: italic;
+  margin: 0 0 18px;
+  color: #333;
+}
+
+.kontakt-text{
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin: 0 0 22px;
+  color: #333;
+}
+
+.kontakt-info{
+  max-width: 420px;
+  margin: 0 auto 24px;
+  font-size: 0.98rem;
+}
+
+.kontakt-info a{
+  color: #1c2c4f;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(28, 44, 79, 0.2);
+}
+
+.kontakt-info a:hover{
+  border-bottom-color: rgba(28, 44, 79, 0.7);
+}
+
+.cta-btn{
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #f4a8c1;
+  color: black;
+  font-family: "Anton", sans-serif;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  text-decoration: none;
+}
+
+/* =========================================================
+   RESPONSIVE (INDEX) — SAMLET LØSNING  <= 900px
+   - Mobil-besked (pæn)
+   - Skjul glimt + skills + softskills
+   - HERO: fast rækkefølge (kokkehat -> dig -> titel -> navn)
+   - OM MIG: billede øverst, tekst nederst
+========================================================= */
+
+/* Default: skjul mobil-besked */
+.mobile-notice{
+  display: none;
+}
+
+@media (max-width: 900px){
+
+  /* =========================================================
+     1) MOBIL-BESKED
+  ========================================================= */
+  .mobile-notice{
+    display: block;
+    margin: 28px auto 40px;
+    width: min(600px, 88vw);
+    text-align: center;
+    padding: 26px 24px;
+    border-radius: 24px;
+    background: rgba(255,255,255,0.35);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.12);
+    border: 1px solid rgba(255,255,255,0.18);
+  }
+
+  /* Hvis du bruger eyebrow + text i HTML */
+  .notice-eyebrow{
+    font-family: "Anton", sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    margin: 0 0 12px;
+    color: #e2f7fd;
+  }
+
+  .notice-text{
+    font-family: "Playfair Display", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+    color: #ffffff;
+  }
+
+  /* Fallback hvis du kun har <p> inde i .mobile-notice */
+  .mobile-notice p{
+    font-family: "Playfair Display", serif;
+    font-size: 1.05rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+    color: #ffffff;
+  }
+
+
+  /* =========================================================
+     2) SKJUL TUNGE SEKTIONER
+  ========================================================= */
+  .glimt-section{
+    display: none !important;
+  }
+
+  .skills,
+  .softskills-section{
+    display: none !important;
+  }
+
+
+  /* =========================================================
+     3) HERO (MOBIL)
+     Fast rækkefølge: kokkehat -> dig -> titel -> navn
+  ========================================================= */
+  .hero{
+    height: auto;
+    min-height: 100svh;
+    padding: 110px 5vw 40px;
+  }
+
+  .hero-inner{
+    height: auto;
+    padding-bottom: 40px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 16px;
+  }
+
+  /* 1) Kokkehat */
+  .hero-kokkehat{
+    display: block;
+    position: static;
+    order: 1;
+    width: 140px;
+    margin-top: 6px;
+    pointer-events: none;
+  }
+
+  /* 2) Dig */
+  .hero-gigi{
+    position: static;
+    order: 2;
+    width: min(360px, 88vw);
+    height: auto;
+    max-height: none;
+    margin: 0;
+    display: block;
+  }
+
+  /* 3) Titel */
+  .hero-title-block{
+    position: static;
+    order: 3;
+    transform: none;
+    text-align: center;
+    margin: 0;
+  }
+
+  /* 4) Navn */
+  .hero-credit{
+    position: static;
+    order: 4;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+
+  /* =========================================================
+     4) OM MIG (MOBIL)
+     Billede øverst, tekst nederst
+  ========================================================= */
+  .om-mig-section{
+    padding: 120px 7vw 90px;
+    min-height: auto;
+  }
+
+  .om-mig-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 28px;
+  }
+
+  .om-mig-image{
+    order: 1;
+    width: min(420px, 92vw);
+    height: auto;
+    display: block;
+  }
+
+  .om-mig-text{
+    order: 2;
+    width: 100%;
+    max-width: 680px;
+  }
+
+  .om-mig-text p{
+    max-width: none;
+  }
+
+  .om-mig-title{
+    margin: 0 0 24px;
+    text-align: left;
+  }
+}
+

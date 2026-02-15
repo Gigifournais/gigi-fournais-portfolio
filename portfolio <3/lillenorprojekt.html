@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gigi Fournais – Lille Nor</title>
+  <!-- FAVICON -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+  <meta name="theme-color" content="#1c2c4f">
+
+  <!-- FÆLLES CSS -->
+  <link rel="stylesheet" href="basefil.css">
+
+  <!-- SIDE CSS (kun Lille Nor projekt) -->
+  <link rel="stylesheet" href="projekter.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- NAV / MENU I PILLE-FORM -->
+  <header class="hero-header scroll-up" id="site-header">
+    <div class="hero-header-inner">
+      <!-- LOGO: tilbage til index -->
+      <a href="index.html" class="logo-link" aria-label="Til forsiden">
+        <img src="billeder/logoportfolio.png" alt="Gigi Fournais logo" class="logo-img" />
+      </a>
+
+      <nav class="hero-nav" aria-label="Hovedmenu">
+        <!-- OM MIG: til ommig.html -->
+        <a href="ommig.html">Om mig</a>
+
+        <!-- KONTAKT: mailto -->
+        <a href="mailto:gigifournais@gmail.com">Kontakt mig</a>
+
+        <!-- Dropdown: Projekter -->
+        <div class="nav-dropdown" id="projectsDropdown">
+          <button
+            type="button"
+            class="nav-dropbtn"
+            id="projectsBtn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="projectsMenu"
+          >
+            Projekter
+            <span class="nav-caret" aria-hidden="true">▾</span>
+          </button>
+
+          <div class="nav-dropmenu" id="projectsMenu" role="menu" aria-labelledby="projectsBtn">
+            <a role="menuitem" href="havblink.html">Havblink Hvidvin</a>
+            <a role="menuitem" href="lillenorprojekt.html" aria-current="page">Lille Nor</a>
+            <a role="menuitem" href="steno.html">Steno Museum</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <header class="project-hero">
+      <div class="wrap">
+        <p class="menu-kicker">MENU 1 · LILLE NOR</p>
+
+        <div class="hero-grid">
+          <div class="hero-text">
+            <h1 class="hero-title">
+              VISUEL<br>
+              IDENTITET &amp;<br>
+              BOOKINGFLOW
+            </h1>
+
+            <div class="hero-body">
+              <p class="hero-lead">
+                Et UX- og visuelt designprojekt for genbrugsbutikken Lille Nor, hvor fokus var at gøre det nemmere for standlejere at
+                forstå bookingkoncepter, priser og praktiske rammer – uden at miste butikkens varme og organiske univers.
+              </p>
+            </div>
+          </div>
+
+          <figure class="hero-media">
+            <img src="billeder/lillenorprojekt.png" alt="Mockup af Lille Nor website på en skærm">
+          </figure>
+        </div>
+      </div>
+    </header>
+
+    <!-- STEMNING -->
+    <section class="project-section mood" aria-labelledby="mood-title">
+      <div class="wrap wrap--wide">
+        <h2 id="mood-title" class="mood-title">
+          STEMNING &amp; VISUEL<br>RETNING
+        </h2>
+
+        <div class="mood-grid">
+          <div class="mood-text">
+            <p>
+              Jeg samlede billeder, materialer og referencer for at fange Lille Nors DNA: nærvær, æstetik, leg og kvalitet.
+              Collagen var afsæt for farver, typografi og det visuelle udtryk.
+            </p>
+          </div>
+
+          <figure class="mood-media">
+            <img src="billeder/lillenormoodboard.png" alt="Lille Nor moodboard/collage">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- BESKRIVELSE -->
+    <section class="project-section desc" aria-labelledby="desc-title">
+      <div class="wrap wrap--wide">
+        <div class="desc-grid">
+          <div class="desc-col">
+            <h2 id="desc-title" class="desc-title">BESKRIVELSE</h2>
+
+            <p>
+              Lille Nor oplevede mange tidskrævende kundeforrespørgsler omkring reolbooking – særligt fra nye standlejere,
+              som havde svært ved at skabe overblik, selvom informationerne fandtes på hjemmesiden.
+            </p>
+
+            <p>
+              Opgaven var at undersøge, hvordan den digitale formidling påvirkede brugeroplevelsen, og udvikle et mere intuitivt
+              bookingflow, der kunne reducere behovet for manuel kundeservice og samtidig bevare Lille Nors varme, personlige univers.
+            </p>
+          </div>
+
+          <div class="desc-col">
+            <h2 class="desc-title">MIT BIDRAG</h2>
+
+            <ul class="contrib-list">
+              <li>Moodboards, collageunivers og visuel stilretning</li>
+              <li>Struktur og layout til et nyt, roligt bookingflow</li>
+              <li>Udarbejdelse af persona, segmentering og brugerrejse til at forstå standlejernes behov</li>
+              <li>Design af UI-elementer, ikonografi og de centrale steps i flowet</li>
+              <li>Deltagelse i usabilitytests (think-aloud) og efterfølgende forbedring af hierarki og visuel klarhed</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCES -->
+    <section class="project-section process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="process-grid">
+          <div class="process-left">
+            <h2 id="process-title" class="process-title">PROCES</h2>
+
+            <article class="process-card">
+              <h3>1 · FORSTÅELSE</h3>
+              <p>
+                Desk research, heuristisk evaluering af den eksisterende hjemmeside og interviews med både nye og erfarne
+                standlejere for at afdække, hvor usikkerheden opstod.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <h3>2 · STRUKTUR &amp; KONCEPT</h3>
+              <p>
+                Jeg var med til at definere persona, brugerrejse og problemformulering og skitsere et nyt flow med tydelige
+                steps og visualisering af koncepter og priser.
+              </p>
+            </article>
+
+            <article class="process-card">
+              <h3>3 · PROTOTYPE &amp; TEST</h3>
+              <p>
+                Vi udviklede en klikbar prototype og testede den med think-aloud. På baggrund af testene justerede vi
+                hierarki, feedback og navigation for at skabe mere tryghed og overblik.
+              </p>
+            </article>
+          </div>
+
+          <div class="process-right">
+            <button class="collage-btn" type="button" aria-label="Åbn collage i stor visning">
+              <img
+                class="collage-thumb"
+                src="billeder/lillenorProces.png"
+                data-full="billeder/lillenorProces.png"
+                alt="Proces-collage for Lille Nor"
+              />
+            </button>
+            <p class="collage-hint">Klik på collagen for at zoome</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- LIGHTBOX -->
+      <div class="lightbox" id="collageLightbox" aria-hidden="true">
+        <img class="lightbox-img" alt="" />
+      </div>
+    </section>
+
+    <!-- RESULTAT -->
+    <section class="project-section result" id="result" aria-labelledby="result-title">
+      <div class="wrap">
+        <h2 id="result-title" class="result-title">RESULTATET</h2>
+
+        <div class="result-grid">
+          <div class="result-text">
+            <p>
+              Løsningen blev et nyt digitalt bookingflow, hvor koncepter, priser og praktiske rammer præsenteres trin for trin
+              med tydelig visuel struktur. Designet lægger vægt på ro, nærvær og genkendelighed, så både nye og erfarne
+              standlejere kan finde vej uden at føle sig i tvivl.
+            </p>
+
+            <p>
+              Det gør det lettere for brugerne at handle selvstændigt og reducerer behovet for manuel kundeservice –
+              samtidig med at Lille Nors organiske og varme udtryk bevares gennem farver, billeder og typografi.
+            </p>
+          </div>
+
+          <div class="result-media">
+            <video
+              class="result-video"
+              src="billeder/resultatlillenor.mp4"
+              muted
+              playsinline
+              preload="metadata"
+              controls
+            ></video>
+
+            <a class="result-cta" href="http://eksamen-norlille.aasborg.dk" target="_blank" rel="noopener">
+              Se fulde løsning her!
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KONTAKT (hvis den er ens på alle sider: flyt til base og behold kun HTML her) -->
+    <section class="kontakt-section" id="kontakt">
+      <div class="kontakt-card">
+        <h2 class="kontakt-title">Klar til at booke bord?</h2>
+        <p class="kontakt-subtitle">
+          Lad os tage en snak om dit næste projekt – jeg tager gerne kokkejakken på.
+        </p>
+    
+        <p class="kontakt-text">
+          Jeg hjælper gerne med alt fra visuelle identiteter og websites til content på sociale medier.
+          Skriv eller connect med mig – så finder vi den rette menu til dit projekt.
+        </p>
+    
+        <div class="kontakt-info">
+          <p>
+            <a href="mailto:gigifournais@gmail.com">gigifournais@gmail.com</a>
+          </p>
+        
+          <p>
+            <a
+            href="https://www.linkedin.com/in/gigi-fournais-c-605460238/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Connect på LinkedIn
+            </a>
+          </p>
+        </div>
+        
+        <a href="mailto:gigifournais@gmail.com" class="cta-btn kontakt-btn">Book en snak</a>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
