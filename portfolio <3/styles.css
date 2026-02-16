@@ -688,7 +688,7 @@ body{
 
 /* =========================================================
    RESPONSIVE (INDEX) — SAMLET LØSNING  <= 900px
-   - Mobil-besked (pæn)
+   - Mobil-besked
    - Skjul glimt + skills + softskills
    - HERO: fast rækkefølge (kokkehat -> dig -> titel -> navn)
    - OM MIG: billede øverst, tekst nederst
@@ -717,7 +717,7 @@ body{
     border: 1px solid rgba(255,255,255,0.18);
   }
 
-  /* Hvis du bruger eyebrow + text i HTML */
+
   .notice-eyebrow{
     font-family: "Anton", sans-serif;
     font-size: 0.9rem;
@@ -736,7 +736,6 @@ body{
     color: #ffffff;
   }
 
-  /* Fallback hvis du kun har <p> inde i .mobile-notice */
   .mobile-notice p{
     font-family: "Playfair Display", serif;
     font-size: 1.05rem;
@@ -762,7 +761,7 @@ body{
 
   /* =========================================================
      3) HERO (MOBIL)
-     Fast rækkefølge: kokkehat -> dig -> titel -> navn
+     Fast rækkefølge: kokkehat -> mig -> titel -> navn
   ========================================================= */
   .hero{
     height: auto;

@@ -68,7 +68,6 @@ html, body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
   }
   
-  /* Hvis du bruger CTA varianten i glimt-sektionen */
   .cta--glimt{
     margin-top: -18px;
   }

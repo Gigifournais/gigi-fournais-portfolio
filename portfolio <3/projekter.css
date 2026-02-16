@@ -3,7 +3,7 @@
    Base/nav/body/fonts ligger i basefil.css
 ========================================================= */
 
-/* Projekt-variable (kun hvis de er specielle for projektsider) */
+/* Projekt-variable */
 :root{
     --bg-hero: #486b9a;
     --bg-section: #77a4e6;
